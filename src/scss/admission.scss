@@ -121,6 +121,10 @@
 }
 
 .price-block {
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(40, 61, 136, 0.1);
+    padding-bottom: toRem(10);
+  }
   &__top {
     display: flex;
     justify-content: space-between;
@@ -140,13 +144,6 @@
     font-weight: 500;
     @include adaptiveValue("font-size", 16, 14);
     line-height: 155%;
-
-    transition: all 0.3s ease 0s;
-    @media (any-hover: hover) {
-      &:hover {
-        color: #fff;
-      }
-    }
   }
 
   &__num {
