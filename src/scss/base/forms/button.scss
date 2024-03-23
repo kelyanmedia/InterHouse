@@ -2,13 +2,66 @@
 // Сніппет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&--fw {
-		width: 100%;
-	}
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include adaptiveValue("gap", 10, 5);
+
+  @include adaptiveValue("padding-left", 20, 15);
+  @include adaptiveValue("padding-right", 20, 15);
+
+  background-color: #ff9e2c;
+  border-radius: 30px;
+
+  font-weight: 600;
+  @include adaptiveValue("font-size", 20, 16);
+  line-height: 110%;
+  color: #fff;
+
+  @include adaptiveValue("height", 60, 50);
+  transition: all 0.3s ease 0s;
+
+  &::after {
+    content: "\e901";
+    @extend %ic;
+    @include adaptiveValue("width", 40, 30);
+    @include adaptiveValue("height", 40, 30);
+    border-radius: 50%;
+
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    color: #304ea0;
+    font-size: toRem(8);
+    transition: transform 0.3s ease 0s;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: rgba(255, 157, 44, 0.8);
+      &::after {
+        transform: translateX(10px);
+      }
+    }
+  }
+  &--fw {
+    width: 100%;
+  }
+
+  &_blue {
+    background-color: #3962ba;
+
+    &::after {
+      color: #ff9e2c;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgba(57, 98, 186, 0.8);
+      }
+    }
+  }
 }

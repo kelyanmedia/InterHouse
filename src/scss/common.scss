@@ -2,8 +2,90 @@
 
 //========================================================================================================================================================
 
-// .fancybox__container {
-//     max-width: none;
-// }
+.fancybox__container {
+  max-width: none;
+}
 
 //========================================================================================================================================================
+
+.title {
+  font-weight: 400;
+  @include adaptiveValue("font-size", 68, 30);
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #283d88;
+
+  &_white {
+    color: #fff;
+  }
+  span {
+    color: #ff9e2c;
+  }
+}
+
+.play {
+  position: relative;
+
+  @media (any-hover: hover) {
+    &:hover {
+      &::before {
+        background-color: #283d88;
+      }
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    content: "";
+    @include adaptiveValue("width", 100, 50);
+    @include adaptiveValue("height", 100, 50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  &::after {
+    content: "\e904";
+    @extend %ic;
+    @include adaptiveValue("font-size", 52, 25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 5px), -50%);
+    z-index: 2;
+
+    @media (max-width: $mobile) {
+      transform: translate(calc(-50% + 3px), -50%);
+    }
+  }
+}
+
+//========================================================================================================================================================
+
+.decor-item {
+  background-image: url("@img/decore/item-decor.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 34.8%; /* 200/575 */
+  height: 100%;
+  top: toRem(-20);
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
