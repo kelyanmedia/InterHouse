@@ -28,80 +28,80 @@ import "../../scss/base/swiper.scss"
 function initSliders() {
   // Список слайдерів
   // Перевіряємо, чи є слайдер на сторінці
-  if (document.querySelector(".df1234342")) {
-    new Swiper(".df12324234", {
-      modules: [Navigation],
-      observer: true,
-      observeParents: true,
-      slidesPerView: 1,
-      spaceBetween: 0,
-      //autoHeight: true,
-      speed: 800,
+  // if (document.querySelector(".df1234342")) {
+  //   new Swiper(".df12324234", {
+  //     modules: [Navigation],
+  //     observer: true,
+  //     observeParents: true,
+  //     slidesPerView: 1,
+  //     spaceBetween: 0,
+  //     //autoHeight: true,
+  //     speed: 800,
 
-      // lazyPreloaderClass: 'preloader',
+  //     // lazyPreloaderClass: 'preloader',
 
-      //touchRatio: 0,
-      //simulateTouch: false,
-      //loop: true,
-      //preloadImages: false,
-      //lazy: true,
+  //     //touchRatio: 0,
+  //     //simulateTouch: false,
+  //     //loop: true,
+  //     //preloadImages: false,
+  //     //lazy: true,
 
-      /*
-			// Ефекти
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
+  //     /*
+  // 		// Ефекти
+  // 		effect: 'fade',
+  // 		autoplay: {
+  // 			delay: 3000,
+  // 			disableOnInteraction: false,
+  // 		},
+  // 		*/
 
-      // Пагінація
-      /*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			*/
+  //     // Пагінація
+  //     /*
+  // 		pagination: {
+  // 			el: '.swiper-pagination',
+  // 			clickable: true,
+  // 		},
+  // 		*/
 
-      // Скроллбар
-      /*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
+  //     // Скроллбар
+  //     /*
+  // 		scrollbar: {
+  // 			el: '.swiper-scrollbar',
+  // 			draggable: true,
+  // 		},
+  // 		*/
 
-      // Кнопки "вліво/вправо"
-      navigation: {
-        prevEl: ".swiper-button-prev",
-        nextEl: ".swiper-button-next",
-      },
-      /*
-			// Брейкпоінти
-			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
-      // Події
-      on: {},
-    })
-  }
+  //     // Кнопки "вліво/вправо"
+  //     navigation: {
+  //       prevEl: ".swiper-button-prev",
+  //       nextEl: ".swiper-button-next",
+  //     },
+  //     /*
+  // 		// Брейкпоінти
+  // 		breakpoints: {
+  // 			640: {
+  // 				slidesPerView: 1,
+  // 				spaceBetween: 0,
+  // 				autoHeight: true,
+  // 			},
+  // 			768: {
+  // 				slidesPerView: 2,
+  // 				spaceBetween: 20,
+  // 			},
+  // 			992: {
+  // 				slidesPerView: 3,
+  // 				spaceBetween: 20,
+  // 			},
+  // 			1268: {
+  // 				slidesPerView: 4,
+  // 				spaceBetween: 30,
+  // 			},
+  // 		},
+  // 		*/
+  //     // Події
+  //     on: {},
+  //   })
+  // }
 
   if (document.querySelector(".graduates__slider")) {
     new Swiper(".graduates__slider", {
@@ -201,7 +201,7 @@ function initSliders() {
 
       breakpoints: {
         320: {
-          slidesPerView: 2.8,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         600: {
