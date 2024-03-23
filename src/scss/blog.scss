@@ -4,6 +4,10 @@
   &__container {
   }
 
+  &__maintitle {
+    @include adaptiveValue("margin-bottom", 50, 40);
+  }
+
   &__items {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));

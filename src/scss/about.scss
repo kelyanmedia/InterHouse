@@ -1,0 +1,106 @@
+.history {
+  @include adaptiveValue("padding-top", 75, 30);
+  @include adaptiveValue("padding-bottom", 75, 30);
+  &__container {
+  }
+
+  &__maintitle {
+    @include adaptiveValue("margin-bottom", 50, 30);
+  }
+
+  &__items {
+    display: grid;
+    @include adaptiveValue("gap", 30, 20);
+
+    grid-template-columns: repeat(auto-fill, minmax(toRem(345), 1fr));
+  }
+
+  &__item {
+  }
+}
+
+.item-history {
+  border-radius: 10px;
+  background-color: #283d88;
+  padding: toRem(30) toRem(30) toRem(40);
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $mobile) {
+    padding: toRem(25) toRem(15) toRem(30);
+  }
+
+  &_bg {
+    background-image: url("@img/history/bg-yellow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__ico {
+    @include adaptiveValue("max-width", 60, 50);
+    img {
+      max-width: 100%;
+    }
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 20);
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 110%;
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+
+  &__text {
+    @include adaptiveValue("font-size", 20, 18);
+    line-height: 130%;
+
+    &:not(:last-child) {
+      margin-bottom: toRem(20);
+    }
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+}
+
+//========================================================================================================================================================
+
+.clients {
+  @include adaptiveValue("padding-top", 75, 30);
+  @include adaptiveValue("padding-bottom", 75, 30);
+  &__container {
+  }
+
+  &__title {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 30);
+    }
+  }
+
+  &__wrapper {
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+
+  &__items {
+    @media (max-width: $mobile) {
+      margin-right: toRem(-15);
+      margin-left: toRem(-15);
+    }
+  }
+
+  &__item {
+    img {
+      max-width: 100%;
+    }
+  }
+}

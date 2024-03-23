@@ -50,6 +50,10 @@
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+
+    &_white {
+      color: #fff;
+    }
   }
 
   &__button {
