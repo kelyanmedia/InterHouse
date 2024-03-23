@@ -114,9 +114,7 @@
   img {
     display: block;
     max-width: 100%;
-    &:not(:last-child) {
-      @include adaptiveValue("margin-bottom", 30, 25);
-    }
+    @include adaptiveValue("margin-bottom", 30, 25);
   }
 
   h1,
