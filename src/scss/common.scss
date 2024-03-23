@@ -89,3 +89,58 @@
   pointer-events: none;
   z-index: -1;
 }
+
+//========================================================================================================================================================
+
+.navigation {
+  display: flex;
+  gap: toRem(10);
+  &__button {
+    font-size: toRem(22);
+    color: #283d88;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: toRem(35);
+    width: toRem(35);
+
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+.button-prev {
+}
+
+.button-next {
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: toRem(5);
+  .swiper-pagination-bullet {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #283d88;
+    border-radius: 50%;
+    width: toRem(10);
+    height: toRem(10);
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #283d88;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #283d88;
+  }
+}

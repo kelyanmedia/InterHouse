@@ -136,17 +136,22 @@
   }
 
   &__buttons {
-    position: relative;
-    z-index: 6;
+    @media (min-width: $tablet) {
+      display: none;
+    }
+    @media (max-width: $tablet) {
+      position: relative;
+      z-index: 6;
 
-    background-color: #fff;
+      background-color: #fff;
 
-    border-radius: 5px;
-    padding: toRem(10);
+      border-radius: 5px;
+      padding: toRem(10);
 
-    display: flex;
-    align-items: center;
-    @include adaptiveValue("gap", 15, 10);
+      display: flex;
+      align-items: center;
+      @include adaptiveValue("gap", 15, 10);
+    }
     .header__search {
       @media (min-width: $tablet) {
         display: none;
