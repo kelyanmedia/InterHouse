@@ -12,17 +12,17 @@
             <section class="top-theme">
                 <div class="top-theme__container">
                     <div class="top-theme__items">
-                        <div class="top-theme__item">Как поступить</div>
-                        <div class="top-theme__item">Стоимость обучения</div>
-                        <div class="top-theme__item">Гранты</div>
-                        <div class="top-theme__item">Как перевестись</div>
-                        <div class="top-theme__item">Как подготовиться к поступлению</div>
+                        <div class="top-theme__item" data-goto="#block1" data-goto-header>Как поступить</div>
+                        <div class="top-theme__item" data-goto="#block2" data-goto-header>Стоимость обучения</div>
+                        <div class="top-theme__item" data-goto="#block3" data-goto-header>Гранты</div>
+                        <div class="top-theme__item" data-goto="#block4" data-goto-header>Как перевестись</div>
+                        <div class="top-theme__item" data-goto="#block5" data-goto-header>Как подготовиться к поступлению</div>
                         <a href="#" target="_blank" class="top-theme__item">Telegram для поступающих</a>
                     </div>
                 </div>
             </section>
 
-            <section class="text-block">
+            <section class="text-block" id="block1">
                 <div class="text-block__container">
                     <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Как поступить</h2>
@@ -82,7 +82,7 @@
                 </div>
             </section>
 
-            <section class="text-block">
+            <section class="text-block" id="block2">
                 <div class="text-block__container">
                     <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Стоимость обучения</h2>
@@ -128,7 +128,7 @@
                 </div>
             </section>
 
-            <section class="description">
+            <section class="description" id="block3">
                 <div class="description__container">
                     <div class="description__body">
                         <h6 class="description__title title title_white">Получите грант на обучение </h6>
@@ -140,7 +140,7 @@
                 </div>
             </section>
 
-            <section class="text-block">
+            <section class="text-block" id="block4">
                 <div class="text-block__container">
                     <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Как перевестись</h2>
@@ -162,7 +162,7 @@
                 </div>
             </section>
 
-            <section class="entrance-tests">
+            <section class="entrance-tests" id="block5">
                 <div class="entrance-tests__container">
                     <h2 class="entrance-tests__maintitle title">Видеоразборы <br> вступительных испытаний</h2>
                     <div class="entrance-tests__items">
@@ -233,6 +233,7 @@
 
         </main>
         @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
     </div>
     @@include('html/_js.htm',{})
 </body>

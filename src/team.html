@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page page_hero">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title title_white">Коллектив лицея</h1>
+                    </div>
+                </div>
+                <div class="hero__bg-ibg"><img src="@img/hero/bg04.jpg" alt="" loading="lazy"></div>
+            </section>
+
+            <section class="teachers">
+                <div class="teachers__container">
+                    <div class="teachers__items">
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/01.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                            <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/02.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                            <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/03.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Юсупий Фарангиз Улугбековна</a></h4>
+                            <div class="item-people__place">Заместитель директора по работе с молодежью</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/04.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Хусанов Ильхом Бахромович</a></h4>
+                            <div class="item-people__place">Академический руководитель
+                                направления “Международные отношения”</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/01.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                            <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/02.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                            <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/03.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Юсупий Фарангиз Улугбековна</a></h4>
+                            <div class="item-people__place">Заместитель директора по работе с молодежью</div>
+                        </div>
+                        <div class="teachers__item item-people">
+                            <a href="#" class="item-people__image-ibg"><img src="@img/teachers/04.jpg" alt="" loading="lazy"></a>
+                            <h4 class="item-people__name"><a href="#">Хусанов Ильхом Бахромович</a></h4>
+                            <div class="item-people__place">Академический руководитель
+                                направления “Международные отношения”</div>
+                        </div>
+                    </div>
+                    <button class="teachers__button button button_blue">Загрузить еще </button>
+                </div>
+            </section>
+
+            <section class="submit">
+                <div class="submit__container">
+                    <div class="submit__body">
+                        <div class="submit__title">Оставьте заявку на консультацию</div>
+                        <div class="submit__text">Заполните форму, мы свяжемся с вами в ближайшее время </div>
+
+                        <form action="#" class="submit__form form-submit">
+                            <div class="form-submit__body">
+                                <div class="form-submit__inputs">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Имя ребенка" class="form-submit__input input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Класс " class="form-submit__input input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Факультет" class="form-submit__input input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="+998 99 999-99-99" class="form-submit__input input">
+                                </div>
+                                <button class="form-submit__button button">Перезвоните мне</button>
+                            </div>
+                            <div class="form-submit__info">Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных</div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -2,6 +2,7 @@
   @include adaptiveValue("padding-top", 75, 30);
   @include adaptiveValue("padding-bottom", 75, 30);
   &__container {
+    display: grid;
   }
 
   &__maintitle {
@@ -12,9 +13,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
     @include adaptiveValue("gap", 30, 20);
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 30);
+    }
   }
 
   &__item {
+  }
+
+  &__button {
+    justify-self: center;
   }
 }
 .item-blog {
@@ -90,5 +99,55 @@
       background-color: #fff;
       transition: all 0.3s ease 0s;
     }
+  }
+}
+
+//========================================================================================================================================================
+
+.blog-article {
+  @include adaptiveValue("padding-top", 75, 30);
+  @include adaptiveValue("padding-bottom", 75, 30);
+  &__container {
+    max-width: toRem(730);
+  }
+
+  img {
+    max-width: 100%;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 25);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400;
+    @include adaptiveValue("font-size", 32, 24);
+    line-height: 110%;
+    &:not(:last-child) {
+      margin-bottom: toRem(10);
+    }
+  }
+
+  font-weight: 400;
+  @include adaptiveValue("font-size", 20, 16);
+  line-height: 130%;
+
+  p,
+  div,
+  ul,
+  ol,
+  li {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 15);
+    }
+  }
+
+  &__date {
+    font-size: toRem(16);
+    margin-bottom: toRem(20);
   }
 }

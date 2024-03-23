@@ -13,7 +13,7 @@
                 <div class="hero__container">
                     <div class="hero__body">
                         <h1 class="hero__name hero__name_white">О лицее</h1>
-                        <button class="hero__button button">Получить консультацию по поступлению</button>
+                        <button class="hero__button button" data-popup="#contact">Получить консультацию по поступлению</button>
                     </div>
                 </div>
                 <div class="hero__bg-ibg"><img src="@img/hero/bg02.jpg" alt="" loading="lazy"></div>
@@ -172,6 +172,7 @@
 
         </main>
         @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
     </div>
     @@include('html/_js.htm',{})
 </body>

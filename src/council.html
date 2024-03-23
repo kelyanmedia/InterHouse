@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page page_hero">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <h1 class="hero__title title title_white">Совет лицеистов</h1>
+                    </div>
+                </div>
+                <div class="hero__bg-ibg"><img src="@img/hero/bg05.jpg" alt="" loading="lazy"></div>
+            </section>
+
+            <section class="history">
+                <div class="history__container">
+                    <h2 class="history__maintitle title">Возможность подготовиться к успешному поступлению</h2>
+                    <div class="history__items">
+                        <div class="history__item item-history">
+                            <div class="item-history__ico"><img src="@img/history/ico02.svg" alt="" loading="lazy"></div>
+                            <div class="item-history__title">Защита законных интересов обучающихся</div>
+                        </div>
+                        <div class="history__item item-history">
+                            <div class="item-history__ico"><img src="@img/history/ico03.svg" alt="" loading="lazy"></div>
+                            <div class="item-history__title">Представляем лицеистов в переговорах с администрацией</div>
+                        </div>
+                        <div class="history__item item-history">
+                            <div class="item-history__ico"><img src="@img/history/ico04.svg" alt="" loading="lazy"></div>
+                            <div class="item-history__title">Оказываем консультационную поддержку</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description">
+                <div class="description__container">
+                    <h6 class="description__maintitle title">Как к нам попасть </h6>
+                    <div class="description__body">
+                        <div class="description__text">
+                            В начале учебного года мы проводим регламентированные выборы. Каждый лицеист имеет шанс избраться сначала от своей кураторской группы, а потом и от направления. При наличии свободных мест могут проводиться довыборы.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="graduates">
+                <div class="graduates__container">
+                    <h2 class="graduates__title title">Руководители подразделений </h2>
+                    <div class="graduates__slider">
+                        <div class="graduates__wrapper swiper-wrapper">
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/03.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Юсупий Фарангиз Улугбековна</a></h4>
+                                <div class="item-people__place">Заместитель директора по работе с молодежью</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/04.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Хусанов Ильхом Бахромович</a></h4>
+                                <div class="item-people__place">Академический руководитель
+                                    направления “Международные отношения”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                        </div>
+                        <div class="graduates__controll">
+                            <div class="graduates__pagination pagination"></div>
+                            <div class="graduates__navigation navigation">
+                                <button class="navigation__button button-prev _icon-prev"></button>
+                                <button class="navigation__button button-next _icon-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

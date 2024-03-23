@@ -5,7 +5,7 @@
   }
 
   &__title {
-    @include adaptiveValue("margin-bottom", 75, 30);
+    @include adaptiveValue("margin-bottom", 50, 30);
   }
 
   &__slider {

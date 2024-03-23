@@ -13,6 +13,10 @@
 
     display: grid;
     @include adaptiveValue("gap", 50, 30);
+
+    @media (min-width: $tablet) {
+      min-height: toRem(600);
+    }
   }
 
   &__content {
@@ -694,5 +698,75 @@
     font-weight: 400;
     font-size: toRem(14);
     line-height: 100%;
+  }
+}
+
+//========================================================================================================================================================
+
+.person {
+  @include adaptiveValue("padding-top", 75, 30);
+  @include adaptiveValue("padding-bottom", 50, 30);
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include adaptiveValue("gap", 50, 30, 0, 1230, 991);
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__image-ibg {
+    padding-bottom: percent(580, 575);
+    height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media (max-width: $tablet) {
+      max-width: toRem(600);
+      width: 100%;
+      justify-self: center;
+      height: toRem(600);
+      padding-bottom: 0;
+    }
+    @media (max-width: $mobile) {
+      padding-bottom: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title {
+    font-weight: 400;
+    @include adaptiveValue("font-size", 32, 25);
+    line-height: 110%;
+    padding-bottom: toRem(8);
+
+    border-bottom: 1px solid rgba(40, 61, 136, 0.1);
+    margin-bottom: toRem(12);
+  }
+
+  &__place {
+    font-weight: 400;
+    font-size: toRem(14);
+    line-height: 107%;
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 20);
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    @include adaptiveValue("font-size", 20, 16);
+    line-height: 130%;
+
+    p {
+      &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 15, 10);
+      }
+    }
   }
 }

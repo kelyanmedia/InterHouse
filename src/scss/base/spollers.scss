@@ -3,6 +3,7 @@
 
 // Блок зі спойлерами
 .spollers {
+  height: fit-content;
   display: grid;
   @include adaptiveValue("gap", 20, 10);
 }
@@ -30,6 +31,7 @@
   align-items: center;
   justify-content: space-between;
   gap: toRem(10);
+  color: #283d88;
 
   &::marker {
   }

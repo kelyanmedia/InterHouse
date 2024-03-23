@@ -12,14 +12,14 @@
             <section class="top-theme">
                 <div class="top-theme__container">
                     <div class="top-theme__items">
-                        <div class="top-theme__item">Почетные выпускники лицея</div>
-                        <div class="top-theme__item">Наши выпускники за рубежом</div>
-                        <div class="top-theme__item">Клуб выпускников</div>
+                        <div class="top-theme__item" data-goto="#block1" data-goto-header>Почетные выпускники лицея</div>
+                        <div class="top-theme__item" data-goto="#block2" data-goto-header>Наши выпускники за рубежом</div>
+                        <div class="top-theme__item" data-goto="#block3" data-goto-header>Клуб выпускников</div>
                     </div>
                 </div>
             </section>
 
-            <section class="graduates">
+            <section class="graduates" id="block1">
                 <div class="graduates__container">
                     <h2 class="graduates__title title">Почетные выпускники <br> Академического лицея InterHouse </h2>
                     <div class="graduates__slider">
@@ -85,7 +85,7 @@
                 </div>
             </section>
 
-            <section class="graduates">
+            <section class="graduates" id="block2">
                 <div class="graduates__container">
                     <h2 class="graduates__title title">Наши выпускники зарубежом </h2>
                     <div class="graduates__slider">
@@ -151,7 +151,7 @@
                 </div>
             </section>
 
-            <section class="description">
+            <section class="description" id="block3">
                 <div class="description__container">
                     <h6 class="description__maintitle title">Клуб выпускников </h6>
                     <div class="description__body">
@@ -206,6 +206,7 @@
 
         </main>
         @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
     </div>
     @@include('html/_js.htm',{})
 </body>

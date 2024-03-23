@@ -1,9 +1,41 @@
-<div id="popup" aria-hidden="true" class="popup">
+<div id="contact" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
+			<button data-close type="button" class="popup__close"></button>
+			<div class="submit">
+				<div class="submit__body">
+					<div class="submit__title">Оставьте заявку на консультацию</div>
+					<div class="submit__text">Заполните форму, мы свяжемся с вами в ближайшее время </div>
+
+					<form action="#" class="submit__form form-submit">
+						<div class="form-submit__body">
+							<div class="form-submit__inputs">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Имя ребенка" class="form-submit__input input">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Класс " class="form-submit__input input">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Факультет" class="form-submit__input input">
+								<input autocomplete="off" type="text" name="form[]" placeholder="+998 99 999-99-99" class="form-submit__input input">
+							</div>
+							<button class="form-submit__button button">Перезвоните мне</button>
+						</div>
+						<div class="form-submit__info">Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="thank" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="submit">
+				<div class="submit__body">
+					<div class="submit__title">Спасибо за заявку!</div>
+					<div class="submit__text">Мы свяжемся с вами в ближайшее время </div>
+				</div>
 			</div>
 		</div>
 	</div>
