@@ -169,6 +169,13 @@ body {
 @import "header";
 @import "footer";
 
+.page {
+  padding-top: var(--header-height);
+  &_hero {
+    padding-top: 0;
+  }
+}
+
 // Підключення стилів окремих сторінок
 @import "home";
 @import "blog";

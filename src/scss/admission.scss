@@ -1,5 +1,5 @@
 .top-theme {
-  @include adaptiveValue("padding-top", 150, 100);
+  @include adaptiveValue("padding-top", 50, 30);
   @include adaptiveValue("padding-bottom", 30, 30);
   &__container {
   }

@@ -208,7 +208,7 @@ flsScroll.pageNavigation()
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
 flsScroll.headerScroll()
 
-// flsFunctions.getHeaderHeight('.header');
+flsFunctions.getHeaderHeight(".header")
 
 // Модуль анімація цифрового лічильника
 // Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
