@@ -151,6 +151,54 @@ function initSliders() {
       on: {},
     })
   }
+  if (document.querySelector(".blog__slider")) {
+    new Swiper(".blog__slider", {
+      modules: [Navigation, Pagination],
+      observer: true,
+      observeParents: true,
+
+      speed: 500,
+      loop: true,
+      lazyPreloaderClass: "preloader",
+
+      pagination: {
+        el: ".blog__slider .pagination",
+        clickable: true,
+      },
+
+      navigation: {
+        prevEl: ".blog__slider .button-prev",
+        nextEl: ".blog__slider .button-next",
+      },
+
+      // Брейкпоінти
+      breakpoints: {
+        320: {
+          slidesPerView: 1.2,
+          spaceBetween: 15,
+        },
+        480: {
+          slidesPerView: 1.6,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1230: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+
+      // Події
+      on: {},
+    })
+  }
 
   if (document.querySelector(".photo__slider")) {
     new Swiper(".photo__slider", {
