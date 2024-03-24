@@ -115,6 +115,24 @@
     @media (max-width: $tablet) {
       margin-left: auto;
     }
+
+    &_pc {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+    &_mob {
+      margin-top: toRem(20);
+      width: max-content;
+      margin-left: 0;
+
+      @media (min-width: $mobile) {
+        display: none;
+      }
+      @media (max-width: $mobile) {
+        display: flex;
+      }
+    }
   }
 
   &__social-item {
@@ -128,8 +146,19 @@
       }
     }
 
+    @media (max-width: $mobile) {
+      max-width: toRem(30);
+      display: block;
+      width: toRem(30);
+    }
+
     img {
       max-width: toRem(25);
+
+      @media (max-width: $mobile) {
+        max-width: toRem(30);
+        width: 100%;
+      }
     }
   }
 
@@ -148,10 +177,14 @@
 
       border-radius: 5px;
       padding: toRem(10);
+      min-height: toRem(50);
 
       display: flex;
       align-items: center;
-      @include adaptiveValue("gap", 15, 10);
+      gap: toRem(15);
+    }
+    @media (max-width: $mobile) {
+      margin-left: auto;
     }
     .header__search {
       @media (min-width: $tablet) {

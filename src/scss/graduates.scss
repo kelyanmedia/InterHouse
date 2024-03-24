@@ -2,6 +2,8 @@
   @include adaptiveValue("padding-top", 50, 30);
   @include adaptiveValue("padding-bottom", 75, 30);
   &__container {
+    display: flex;
+    flex-direction: column;
   }
 
   &__title {
@@ -62,6 +64,14 @@
   }
 
   &__pagination {
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+
+    margin-top: toRem(20);
   }
 }
 
