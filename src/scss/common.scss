@@ -95,7 +95,9 @@
 .navigation {
   display: flex;
   gap: toRem(10);
+  pointer-events: none;
   &__button {
+    pointer-events: all;
     font-size: toRem(22);
     color: #283d88;
 

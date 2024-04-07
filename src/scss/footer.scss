@@ -12,18 +12,25 @@
 
     display: flex;
     @media (min-width: $mobile) {
-      @include adaptiveValue("gap", 200, 80, 0, 1230, 767);
+      @include adaptiveValue("gap", 60, 30, 0, 1230, 991);
+      // gap: toRem(20);
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       flex-direction: column;
       gap: toRem(30);
     }
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $pc) {
+      max-width: toRem(200);
+      width: 100%;
+    }
     &_social {
-      @media (min-width: $mobile) {
+      @media (min-width: $tablet) {
         margin-left: auto;
       }
     }
@@ -37,7 +44,9 @@
   }
 
   &__item {
-    width: max-content;
+    // width: 100%;
+    // width: max-content;
+    // display: inline-flex;
     font-weight: 400;
     font-size: toRem(16);
     line-height: 94%;
@@ -45,6 +54,18 @@
       margin-bottom: toRem(12);
     }
 
+    &_big {
+      font-weight: 600;
+      font-size: toRem(20);
+      line-height: 110%;
+
+      &:not(:last-child) {
+        margin-bottom: toRem(15);
+      }
+    }
+  }
+
+  &__link {
     position: relative;
     &::before {
       content: "";
@@ -65,9 +86,6 @@
         }
       }
     }
-  }
-
-  &__link {
   }
 
   &__social {

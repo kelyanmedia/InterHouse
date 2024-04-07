@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/_head.htm',{
-"title":"Главная"
+"title":"Interhouse primary"
 })
 
 <body>
     <div class="wrapper">
         @@include('html/_header.htm',{})
-        <main class="page">
+        <main class="page page_hero">
+
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body">
+                        <div class="hero__wrapper">
+                            <h1 class="hero__name hero__name_white">Interhouse <span>primary</span></h1>
+                            <div class="hero__text">Поступление в начальную школу для детей 7-11 лет</div>
+                        </div>
+                        <button class="hero__button button" data-popup="#contact">Получить консультацию по поступлению</button>
+                    </div>
+                </div>
+                <div class="hero__bg-ibg"><img src="img/hero/bg02.jpg" alt="" loading="lazy"></div>
+            </section>
 
             <section class="top-theme">
                 <div class="top-theme__container">
                     <div class="top-theme__items">
                         <div class="top-theme__item" data-goto="#block1" data-goto-header>Как поступить</div>
-                        <div class="top-theme__item" data-goto="#block2" data-goto-header>Стоимость обучения</div>
-                        <div class="top-theme__item" data-goto="#block3" data-goto-header>Гранты</div>
-                        <div class="top-theme__item" data-goto="#block4" data-goto-header>Как перевестись</div>
-                        <div class="top-theme__item" data-goto="#block5" data-goto-header>Как подготовиться к поступлению</div>
+                        <div class="top-theme__item" data-goto="#block3" data-goto-header>Как подготовиться к поступлению</div>
+                        <div class="top-theme__item" data-goto="#block2" data-goto-header>Как перевестись</div>
                         <a href="#" target="_blank" class="top-theme__item">Telegram для поступающих</a>
                     </div>
                 </div>
@@ -85,64 +96,6 @@
             <section class="text-block" id="block2">
                 <div class="text-block__container">
                     <div class="text-block__body">
-                        <h2 class="text-block__maintitle title">Стоимость обучения</h2>
-                        <div class="text-block__content">
-                            <div class="text-block__price price-block">
-                                <div class="price-block__top">
-                                    <h4 class="price-block__title">Информационные технологии</h4>
-                                    <div class="price-block__num">4 000$</div>
-                                </div>
-                                <div class="price-block__text">
-                                    <p>Один из ключевых предметов. Студенты учатся создавать и отлаживать программы, используя различные языки программирования.</p>
-                                </div>
-                            </div>
-                            <div class="text-block__price price-block">
-                                <div class="price-block__top">
-                                    <h4 class="price-block__title">Информационные технологии</h4>
-                                    <div class="price-block__num">4 000$</div>
-                                </div>
-                                <div class="price-block__text">
-                                    <p>Один из ключевых предметов. Студенты учатся создавать и отлаживать программы, используя различные языки программирования.</p>
-                                </div>
-                            </div>
-                            <div class="text-block__price price-block">
-                                <div class="price-block__top">
-                                    <h4 class="price-block__title">Информационные технологии</h4>
-                                    <div class="price-block__num">4 000$</div>
-                                </div>
-                                <div class="price-block__text">
-                                    <p>Один из ключевых предметов. Студенты учатся создавать и отлаживать программы, используя различные языки программирования.</p>
-                                </div>
-                            </div>
-                            <div class="text-block__price price-block">
-                                <div class="price-block__top">
-                                    <h4 class="price-block__title">Информационные технологии</h4>
-                                    <div class="price-block__num">4 000$</div>
-                                </div>
-                                <div class="price-block__text">
-                                    <p>Один из ключевых предметов. Студенты учатся создавать и отлаживать программы, используя различные языки программирования.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="description" id="block3">
-                <div class="description__container">
-                    <div class="description__body">
-                        <h6 class="description__title title title_white">Получите грант на обучение </h6>
-                        <div class="description__text">
-                            <p>Мы уверены, что образование должно быть доступным, поэтому предлагаем программы получения грантов, которые позволяют студентам получить качественное образование без дополнительных финансовых затрат. </p>
-                            <p>Для участия в конкурсе на получение гранта, <a href="#" target="_blank">заполните анкету по ссылке</a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="text-block" id="block4">
-                <div class="text-block__container">
-                    <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Как перевестись</h2>
                         <div class="text-block__content">
                             <h4 class="text-block__title">Вакантные места:</h4>
@@ -162,7 +115,7 @@
                 </div>
             </section>
 
-            <section class="entrance-tests" id="block5">
+            <section class="entrance-tests">
                 <div class="entrance-tests__container">
                     <h2 class="entrance-tests__maintitle title">Видеоразборы <br> вступительных испытаний</h2>
                     <div class="entrance-tests__items">
@@ -176,7 +129,7 @@
                 </div>
             </section>
 
-            <section class="text-block">
+            <section class="text-block" id="block3">
                 <div class="text-block__container">
                     <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Демоверсии вступительных испытаний</h2>

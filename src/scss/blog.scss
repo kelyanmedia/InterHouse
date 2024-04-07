@@ -35,6 +35,10 @@
     &::after {
       right: 100%;
     }
+
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 20);
+    }
   }
 
   &__controll {

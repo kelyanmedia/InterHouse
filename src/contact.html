@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            @@include('html/_contact.htm',{})
+
+            <section class="our-social">
+                <div class="our-social__container">
+                    <h2 class="our-social__maintitle title">Наши социальные сети</h2>
+                    <div class="our-social__items">
+                        <a href="#" target="_blank" class="our-social__item">
+                            <div class="our-social__ico"><img src="@img/icons/our-telegram.svg" alt="" loading="lazy"></div>
+                            <div class="our-social__text">Telegram для <br> поступающих</div>
+                        </a>
+                        <a href="#" target="_blank" class="our-social__item">
+                            <div class="our-social__ico"><img src="@img/icons/our-telegram.svg" alt="" loading="lazy"></div>
+                            <div class="our-social__text">Telegram для <br> поступающих</div>
+                        </a>
+                        <a href="#" target="_blank" class="our-social__item">
+                            <div class="our-social__ico"><img src="@img/icons/our-telegram.svg" alt="" loading="lazy"></div>
+                            <div class="our-social__text">Telegram для <br> поступающих</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="submit">
+                <div class="submit__container">
+                    <div class="submit__body">
+                        <div class="submit__title">Оставьте заявку на консультацию</div>
+                        <div class="submit__text">Заполните форму, мы свяжемся с вами в ближайшее время </div>
+
+                        <form action="#" class="submit__form form-submit">
+                            <div class="form-submit__body">
+                                <div class="form-submit__inputs">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Имя ребенка" class="form-submit__input input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Класс " class="form-submit__input input">
+
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="+998 99 999-99-99" class="form-submit__input input">
+                                </div>
+                                <button class="form-submit__button button">Перезвоните мне</button>
+                            </div>
+                            <div class="form-submit__info">Нажимая "Отправить" вы соглашаетесь с политикой обработки персональных данных</div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+        @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

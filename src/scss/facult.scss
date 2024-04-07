@@ -2,12 +2,19 @@
   @include adaptiveValue("padding-top", 75, 30);
   @include adaptiveValue("padding-bottom", 75, 30);
   &__container {
+    display: grid;
   }
 
   &__maintitle {
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 50, 30);
     }
+  }
+
+  &__button-more {
+    @include adaptiveValue("margin-top", 50, 30);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__title {

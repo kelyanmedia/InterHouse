@@ -7,9 +7,31 @@
 <body>
     <div class="wrapper">
         @@include('html/_header.htm',{})
-        <main class="page">
+        <main class="page page_hero">
 
-            <section class="text-block">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__body hero__body_center">
+                        <h1 class="hero__name hero__name_white">Лицеистам</h1>
+                    </div>
+                </div>
+                <div class="hero__bg-ibg"><img src="img/hero/bg02.jpg" alt="" loading="lazy"></div>
+            </section>
+
+            <section class="top-theme">
+                <div class="top-theme__container">
+                    <div class="top-theme__items">
+                        <div class="top-theme__item" data-goto="#block1" data-goto-header>Расписание</div>
+                        <div class="top-theme__item" data-goto="#block2" data-goto-header>Гордости лицея</div>
+                        <div class="top-theme__item" data-goto="#block3" data-goto-header>Помощь с поступлением в ВУЗы</div>
+                        <div class="top-theme__item" data-goto="#block4" data-goto-header>Внеурочная жизнь лицея</div>
+                        <div class="top-theme__item" data-goto="#block5" data-goto-header>Наши выпускники зарубежом</div>
+                        <div class="top-theme__item" data-goto="#block6" data-goto-header>Фотогалерея</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-block" id="block1">
                 <div class="text-block__container">
                     <div class="text-block__body">
                         <h2 class="text-block__maintitle title">Расписание</h2>
@@ -36,13 +58,80 @@
                 </div>
             </section>
 
-            <section class="text-block">
+            <section class="graduates" id="block2">
+                <div class="graduates__container">
+                    <h2 class="graduates__title title">Гордости лицея </h2>
+                    <div class="graduates__slider">
+                        <div class="graduates__wrapper swiper-wrapper">
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/03.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Юсупий Фарангиз Улугбековна</a></h4>
+                                <div class="item-people__place">Заместитель директора по работе с молодежью</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/04.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Хусанов Ильхом Бахромович</a></h4>
+                                <div class="item-people__place">Академический руководитель
+                                    направления “Международные отношения”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                        </div>
+                        <div class="graduates__controll">
+                            <div class="graduates__pagination pagination"></div>
+                            <div class="graduates__navigation navigation">
+                                <button class="navigation__button button-prev _icon-prev"></button>
+                                <button class="navigation__button button-next _icon-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-block" id="block3">
                 <div class="text-block__container">
                     <div class="text-block__body">
-                        <h2 class="text-block__maintitle title">Внеурочная жизнь лицея</h2>
+                        <h2 class="text-block__maintitle title">Помощь с поступлением
+                            в ВУЗы</h2>
                         <div data-spollers data-one-spoller class="spollers">
                             <div class="spollers__item">
-                                <button type="button" data-spoller class="spollers__title">Самоуправление и волонтёрство</button>
+                                <button type="button" data-spoller class="spollers__title _spoller-active">Самоуправление и волонтёрство</button>
                                 <div class="spollers__body">
                                     <ul class="spollers__list">
                                         <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Совет лицеистов</a></li>
@@ -79,6 +168,151 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-block" id="block4">
+                <div class="text-block__container">
+                    <div class="text-block__body">
+                        <h2 class="text-block__maintitle title">Внеурочная жизнь лицея</h2>
+                        <div data-spollers data-one-spoller class="spollers">
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__title _spoller-active">Самоуправление и волонтёрство</button>
+                                <div class="spollers__body">
+                                    <ul class="spollers__list">
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Совет лицеистов</a></li>
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Ассоциация волонтеров</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__title">Творчество</button>
+                                <div class="spollers__body">
+                                    <ul class="spollers__list">
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Совет лицеистов</a></li>
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Ассоциация волонтеров</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__title">Экология</button>
+                                <div class="spollers__body">
+                                    <ul class="spollers__list">
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Совет лицеистов</a></li>
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Ассоциация волонтеров</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__title">Медиа</button>
+                                <div class="spollers__body">
+                                    <ul class="spollers__list">
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Совет лицеистов</a></li>
+                                        <li class="spollers__item"><a href="#" target="_blank" class="spollers__link">Ассоциация волонтеров</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="graduates" id="block5">
+                <div class="graduates__container">
+                    <h2 class="graduates__title title">Наши выпускники зарубежом </h2>
+                    <div class="graduates__slider">
+                        <div class="graduates__wrapper swiper-wrapper">
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/03.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Юсупий Фарангиз Улугбековна</a></h4>
+                                <div class="item-people__place">Заместитель директора по работе с молодежью</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/04.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Хусанов Ильхом Бахромович</a></h4>
+                                <div class="item-people__place">Академический руководитель
+                                    направления “Международные отношения”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/01.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Исмагилова Екатерина Евгеньевна</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Дизайн”</div>
+                            </div>
+                            <div class="graduates__slide item-people swiper-slide">
+                                <a href="#" class="item-people__image-ibg">
+                                    <img src="@img/teachers/02.jpg" alt="" loading="lazy">
+                                    <div class="preloader"></div>
+                                </a>
+                                <h4 class="item-people__name"><a href="#">Мажнунов Санжар Валиевич</a></h4>
+                                <div class="item-people__place">Академический руководитель направления “Бизнес-информатика”</div>
+                            </div>
+                        </div>
+                        <div class="graduates__controll">
+                            <div class="graduates__pagination pagination"></div>
+                            <div class="graduates__navigation navigation">
+                                <button class="navigation__button button-prev _icon-prev"></button>
+                                <button class="navigation__button button-next _icon-next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photo" id="block6">
+                <div class="photo__container">
+                    <div class="photo__slider">
+                        <div class="photo__wrapper swiper-wrapper">
+                            <div class="photo__slide-ibg swiper-slide">
+                                <img src="@img/photo/01.jpg" alt="" loading="lazy">
+                                <div class="preloader"></div>
+                            </div>
+                            <div class="photo__slide-ibg swiper-slide">
+                                <img src="@img/hero/bg01.jpg" alt="" loading="lazy">
+                                <div class="preloader"></div>
+                            </div>
+                            <div class="photo__slide-ibg swiper-slide">
+                                <img src="@img/photo/01.jpg" alt="" loading="lazy">
+                                <div class="preloader"></div>
+                            </div>
+                            <div class="photo__slide-ibg swiper-slide">
+                                <img src="@img/hero/bg01.jpg" alt="" loading="lazy">
+                                <div class="preloader"></div>
+                            </div>
+                        </div>
+                        <div class="photo__controll">
+                            <div class="photo__pagination pagination"></div>
+                            <div class="photo__navigation navigation">
+                                <button class="navigation__button button-prev _icon-prev"></button>
+                                <button class="navigation__button button-next _icon-next"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

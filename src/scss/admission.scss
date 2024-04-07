@@ -13,7 +13,8 @@
 
   &__item {
     cursor: pointer;
-    background-color: #ff9e2c;
+
+    background-color: #304ea0;
     border-radius: 30px;
     padding: toRem(10) toRem(20);
 
@@ -28,7 +29,7 @@
 
     @media (any-hover: hover) {
       &:hover {
-        background-color: #3962ba;
+        background-color: #ff9e2c;
       }
     }
   }

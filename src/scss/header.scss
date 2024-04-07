@@ -32,13 +32,22 @@
   }
 
   &__container {
-    @include adaptiveValue("min-height", 100, 75);
-    display: flex;
-    align-items: center;
+    @include adaptiveValue("min-height", 120, 85);
+    // display: flex;
+    // align-items: center;
+    display: grid;
+    gap: toRem(10);
+
+    @media (max-width: $tablet) {
+      min-height: toRem(85);
+    }
 
     transition: min-height 0.3s ease 0s;
     ._header-scroll & {
-      min-height: toRem(75);
+      @include adaptiveValue("min-height", 130, 95);
+      @media (max-width: $tablet) {
+        min-height: toRem(75);
+      }
     }
   }
 
@@ -61,7 +70,8 @@
     background-color: #304ea0;
     border-radius: 8px;
     padding: toRem(0) toRem(20);
-    flex: 0 0 12.8%; /* 154/1200 */
+    // flex: 0 0 12.8%; /* 154/1200 */
+    flex: 0 0 6.8%; /* 82/1200 */
 
     display: flex;
     justify-content: center;
@@ -192,7 +202,44 @@
       }
     }
   }
+
+  &__top {
+  }
 }
+
+.top-header {
+  padding: toRem(3) toRem(5);
+  display: grid;
+  grid-template-columns: 1fr toRem(115) 1fr;
+
+  background-color: #304ea0;
+  border-radius: 8px;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  &__groop {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(20);
+    row-gap: toRem(10);
+
+    &:last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
 .menu {
   &__body {
     @media (min-width: $tablet) {
@@ -210,7 +257,7 @@
       height: 100%;
       top: 0;
       left: -100%;
-      padding: toRem(100) toRem(15) toRem(30);
+      padding: toRem(110) toRem(15) toRem(30);
       background-color: #fff;
 
       overflow: auto;
@@ -269,6 +316,12 @@
           left: 0;
           //   background-color: red;
         }
+      }
+    }
+
+    &_mob {
+      @media (min-width: $tablet) {
+        display: none;
       }
     }
   }
@@ -363,7 +416,7 @@
       pointer-events: none;
       visibility: hidden;
       opacity: 0;
-      z-index: 2;
+      z-index: 7;
     }
 
     &_lang {

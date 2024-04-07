@@ -1,30 +1,63 @@
 <header class="header">
 	<div class="header__container">
+
+		<div class="header__top top-header">
+			<ul class="top-header__groop">
+				<li class="menu__item"><a href="mailto:mail@mail.com" class="menu__link">mail@mail.com</a></li>
+				<li class="menu__item"><a href="tel:+998 99 999 99 99" class="menu__link">+998 99 999 99 99</a></li>
+			</ul>
+			<a href="#" class="top-header__logo"><img src="@img/logo-text.svg" alt="" loading="lazy"></a>
+			<ul class="top-header__groop">
+				<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+				<button data-search-open class="header__search _icon-search"></button>
+				<li class="menu__item"><button type="button" class="menu__link" data-spoller>RU</button>
+					<ul class="menu__sublist menu__sublist_lang">
+						<li class="menu__subitem"><a href="#" class="menu__sublink">UZ</a></li>
+						<li class="menu__subitem"><a href="#" class="menu__sublink">EN</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
 		<div class="header__body">
-			<a href="#" class="header__logo"><img src="@img/logo.png" alt="Logo" loading="lazy"></a>
+			<a href="#" class="header__logo"><img src="@img/logo.svg" alt="Logo" loading="lazy"></a>
 
 			<div class="header__menu menu">
 				<nav class="menu__body">
 					<ul class="menu__list" data-spollers="991.98,max">
-						<li class="menu__item"><a href="#" class="menu__link">Поступление</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Лицеистам</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Выпускникам</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Школам</a></li>
+						<li class="menu__item"><button type="button" class="menu__link" data-spoller>Поступление</button>
+							<ul class="menu__sublist">
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Для детей 7-11 лет</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Для детей 11-15 лет</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Для детей 15-18 лет</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Подготовительные курсы</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><button type="button" class="menu__link" data-spoller>Обучение</button>
+							<ul class="menu__sublist">
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Начальная школа</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Средняя школа</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Лицейские классы</a></li>
+							</ul>
+						</li>
 						<li class="menu__item"><button type="button" class="menu__link" data-spoller>О лицее</button>
 							<ul class="menu__sublist">
 								<li class="menu__subitem"><a href="#" class="menu__sublink">О нас</a></li>
-								<li class="menu__subitem"><a href="#" class="menu__sublink">Факультеты</a></li>
 								<li class="menu__subitem"><a href="#" class="menu__sublink">Коллектив</a></li>
 								<li class="menu__subitem"><a href="#" class="menu__sublink">Вакансии</a></li>
-								<li class="menu__subitem"><a href="#" class="menu__sublink">Подготовительные курсы</a></li>
-								<li class="menu__subitem"><a href="#" class="menu__sublink">Документы</a></li>
+								<li class="menu__subitem"><a href="#" class="menu__sublink">Сведения об образовательной организации</a></li>
 								<li class="menu__subitem"><a href="#" class="menu__sublink">FAQ</a></li>
 							</ul>
 						</li>
+						<li class="menu__item"><a href="#" class="menu__link">Лицеистам</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Стоимость</a></li>
 
-						<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
-						<button data-search-open class="header__search _icon-search"></button>
-						<li class="menu__item"><button type="button" class="menu__link" data-spoller>RU</button>
+						<li class="menu__item"><a href="#" class="menu__link">Созданные условия</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						<li class="menu__item menu__item_mob"><a href="#" class="menu__link">Новости</a></li>
+						<li class="menu__item menu__item_mob"><a href="mailto:mail@mail.com" class="menu__link">mail@mail.com</a></li>
+						<li class="menu__item menu__item_mob"><a href="tel:+998 99 999 99 99" class="menu__link">+998 99 999 99 99</a></li>
+						<li class="menu__item menu__item_mob"><button type="button" class="menu__link" data-spoller>RU</button>
 							<ul class="menu__sublist menu__sublist_lang">
 								<li class="menu__subitem"><a href="#" class="menu__sublink">UZ</a></li>
 								<li class="menu__subitem"><a href="#" class="menu__sublink">EN</a></li>
@@ -42,8 +75,6 @@
 			</div>
 
 			<div class="header__social header__social_pc">
-				<a href="#" target="_blank" class="header__social-item"><img src="@img/icons/whatsapp.svg" alt="" loading="lazy"></a>
-				<a href="#" target="_blank" class="header__social-item"><img src="@img/icons/mail.svg" alt="" loading="lazy"></a>
 				<a href="#" target="_blank" class="header__social-item"><img src="@img/icons/instagram.svg" alt="" loading="lazy"></a>
 				<a href="#" target="_blank" class="header__social-item"><img src="@img/icons/telegram.svg" alt="" loading="lazy"></a>
 			</div>
